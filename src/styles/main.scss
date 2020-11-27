@@ -1,7 +1,11 @@
 @import "utils";
 @import "fonts";
 @import "typography";
+@import "header";
+@import "reset";
+@import "nav";
+@import "top-bar";
 
-body {
-  background: $c-gray;
+.container {
+  margin: 0 auto;
 }

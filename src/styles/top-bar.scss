@@ -1,0 +1,27 @@
+.top-bar {
+  display: flex;
+  max-width: 1175px;
+  justify-content: space-between;
+  align-items: center;
+
+  &__link {
+    display: inline-block;
+    height: 28px;
+  }
+
+  &__phone {
+    margin-right: 35px;
+  }
+
+  &__button {
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background-color: #3751ff;
+    border: 1px solid #3751ff;
+    border-radius: 100px;
+    padding: 0 16px;
+  }
+
+}

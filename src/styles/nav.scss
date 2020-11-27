@@ -1,0 +1,20 @@
+@import "utils";
+
+.nav {
+  display: block;
+
+  &__list {
+    display: inline-grid;
+    grid-template-columns: repeat(5, max-content);
+    gap: 0 45px;
+    list-style: none;
+  }
+  &__link {
+    display: inline-block;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 80px;
+    color: $headersTextColor;
+  }
+
+}
