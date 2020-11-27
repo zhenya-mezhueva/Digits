@@ -1,0 +1,36 @@
+@import "utils";
+
+.top-clients {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 65px 50px;
+
+  &__description {
+    margin-bottom: 50px;
+    font-family: $textFont;
+    font-size: 16px;
+    line-height: 27px;
+    color: rgb(69, 88, 128);
+    opacity: 50%;
+  }
+
+  &__logos {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 0 60px;
+  }
+
+  &__link {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0;
+    height: 44px;
+    border-radius: 10px;
+  }
+
+  &__link:hover {
+    box-shadow: 5px 5px 5px black;
+  }
+
+}
