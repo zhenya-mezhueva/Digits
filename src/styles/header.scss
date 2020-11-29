@@ -2,17 +2,31 @@
 
 .header {
   position: relative;
-  height: 960px;
+  min-height: 720px;
   font-family: $textFont;
   color: #1e266d;
   background: linear-gradient(
-      180deg,
-      rgba(242, 249, 255, 0.12) 0%,
-      #f2f9ff 100%
+    180deg,
+    rgba(242, 249, 255, 0.12) 0%,
+    #f2f9ff 100%
   );
 
-  &__top-bar {
-    margin: 0 auto 145px;
+  //&__top {
+  //  margin-bottom: 80px;
+  //}
+
+  &__wrap {
+    position: relative;
+    min-height: 640px;
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  &__main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
   &__title {
@@ -49,8 +63,10 @@
   }
 
   &__picture {
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 0);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    max-width: 640px;
   }
 }
