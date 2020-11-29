@@ -1,6 +1,15 @@
+@import "vars";
+
 @mixin hover($_property, $_toValue) {
   transition: #{$_property} 0.3s;
   &:hover {
     #{$_property}: $_toValue;
   }
+}
+
+@mixin text ($font-size, $line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-family: $textFont;
+  color: $textColor;
 }

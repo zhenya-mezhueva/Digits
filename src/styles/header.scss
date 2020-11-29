@@ -11,15 +11,12 @@
     #f2f9ff 100%
   );
 
-  //&__top {
-  //  margin-bottom: 80px;
-  //}
-
   &__wrap {
     position: relative;
     min-height: 640px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
   }
 
@@ -62,11 +59,18 @@
     border-radius: 100px;
   }
 
+  &__button--not-active {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 100px;
+    color: #455880;
+  }
+
   &__picture {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    //position: absolute;
+    //right: 0;
+    //top: 50%;
+    //transform: translateY(-50%);
     max-width: 640px;
   }
 }

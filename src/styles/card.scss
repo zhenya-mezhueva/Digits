@@ -1,0 +1,27 @@
+@import "utils";
+
+.card {
+  position: relative;
+  padding: 0 40px 45px 100px;
+  min-height: 190px;
+  max-width: 400px;
+
+  &__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  &__title {
+    line-height: 22px;
+    margin-bottom: 38px;
+  }
+
+  &__text {
+    @include text(18px, 27px);
+  }
+}
+
+.card:not(:last-child) {
+  border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+}

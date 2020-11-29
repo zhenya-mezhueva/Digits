@@ -1,0 +1,16 @@
+@import "utils";
+
+.testimonials {
+  padding: 160px 0 40px;
+
+  &__cards {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 0 28px;
+  }
+
+  &__title {
+    margin-bottom: 56px;
+    color: $headersTextColor;
+  }
+}

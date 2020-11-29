@@ -7,9 +7,30 @@
 @import "top-bar";
 @import "page";
 @import "top-clients";
+@import "help";
+@import "card";
+@import "simlicity";
+@import "testimonials";
+@import "testimonial";
+@import "launch";
 
 .container {
   max-width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section-title {
+  font-family: $headersFont;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 60px;
+  //text-align: center;
+}
+
+.subtitle {
+  font-family: $headersFont;
+  font-size: 22px;
+  line-height: 22px;
+  font-weight: 500;
 }
