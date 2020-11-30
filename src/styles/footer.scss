@@ -1,0 +1,48 @@
+@import "utils";
+
+.footer {
+  padding: 120px 0;
+
+  &__content {
+    padding: 0 80px;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    gap: 0 100px;
+    justify-content: space-between;
+  }
+
+  &__about {
+    max-width: 285px;
+  }
+
+  &__title {
+    margin-bottom: 36px;
+  }
+
+  &__about-text {
+    @include text(18px, 26px);
+    font-weight: 400;
+  }
+
+  &__list-item {
+    padding-bottom: 22px;
+  }
+
+  &__link {
+    @include text(18px, 18px);
+  }
+
+  &__icons {
+    margin-bottom: 40px;
+  }
+
+  &__icon-link:not(:last-child) {
+    margin-right: 25px;
+  }
+
+  &__resources p {
+    @include text(18px, 18px);
+    margin-bottom: 25px;
+  }
+
+}
