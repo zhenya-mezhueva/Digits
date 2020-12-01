@@ -4,6 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 70px;
+
+  //&__nav {
+  //  position: relative;
+  //}
 
   &__logo {
     margin-right: 24px;
@@ -16,29 +21,40 @@
 
   &__contacts {
     display: flex;
+    position: relative;
     align-items: center;
-    padding-left: 25px;
+    //padding-left: 25px;
   }
 
-  &__phone-icon {
-    visibility: hidden;
+  &__phone {
+    margin-right: 20px;
+  }
+
+  &__phone-icon-link {
+    display: none;
     transition: color 0.5s;
   }
 
-  &__phone-icon:hover {
-    color: #f47b9e;
-  }
-
   @media (max-width: 890px) {
+
     &__phone {
       display: none;
     }
 
+    &__phone-icon-link {
+      display: block;
+      position: absolute;
+      z-index: 5;
+      top: 54px;
+      right: 24px;
+    }
+
     &__phone-icon {
-      visibility: visible;
-      font-size: 24px;
-      color: $mainColor;
-      opacity: 80%;
+      opacity: 0.8;
+    }
+
+    &__phone-icon:hover {
+      color: #f47b9e;
     }
   }
 
@@ -46,7 +62,7 @@
     @include btnStyle($colorWhite, $mainColor, 40px);
     min-width: 113px;
     padding: 0 16px;
-    margin-left: 35px;
+    //margin-left: 35px;
     transition: all 500ms ease;
   }
 
@@ -54,11 +70,11 @@
     @include btnBefore($colorWhite);
   }
 
-  @media (max-width: 970px) {
-    &__button {
-      margin-left: 20px;
-    }
-  }
+  //@media (max-width: 970px) {
+  //  &__button {
+  //    margin-left: 20px;
+  //  }
+  //}
 
   &__button:hover:before {
     height: 40px;

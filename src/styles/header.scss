@@ -17,13 +17,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
+  @media (max-width: 1200px) {
+    &__wrap {
+      flex-direction: column;
+    }
   }
 
   &__main-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    flex-shrink: 0;
   }
 
   &__title {
@@ -31,7 +38,7 @@
     font-family: $headersFont;
     font-size: 56px;
     line-height: 58px;
-    margin-bottom: 25px;
+    margin-bottom: 24px;
   }
 
   &__subtitle {
@@ -42,14 +49,28 @@
   }
 
   &__buttons {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     margin-bottom: 35px;
   }
 
+  @media (max-width: 430px) {
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    &__buttons :last-child {
+      margin-left: 0;
+    }
+
+  }
+
+  &__buttons :last-child {
+    margin-left: 24px;
+  }
+
   &__button {
     @include btnStyle($colorWhite, $mainColor, 48px);
-    margin-right: 26px;
     padding: 0 35px;
   }
 
@@ -75,11 +96,21 @@
     height: 48px;
   }
 
+  @media (max-width: 430px) {
+    &__buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__buttons :last-child {
+      margin: 24px 0 0;
+    }
+
+  }
+
   &__picture {
-    //position: absolute;
-    //right: 0;
-    //top: 50%;
-    //transform: translateY(-50%);
+    object-fit: contain;
     max-width: 640px;
   }
+
 }
