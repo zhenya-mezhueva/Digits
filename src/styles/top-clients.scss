@@ -16,8 +16,9 @@
   }
 
   &__logos {
-    display: grid;
-    grid-template-columns: repeat(7, auto);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 0 60px;
   }
 
