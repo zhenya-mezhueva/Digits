@@ -1,14 +1,15 @@
 @import "utils";
 
 .footer {
-  padding: 120px 0;
+  padding-top: 120px;
 
   &__content {
-    padding: 0 80px;
+    padding: 0 80px 80px;
     display: grid;
     grid-template-columns: repeat(4, auto);
     gap: 0 100px;
     justify-content: space-between;
+    border-bottom: 1px solid rgba(135, 146, 161, 0.08);
   }
 
   &__about {
@@ -17,6 +18,7 @@
 
   &__title {
     margin-bottom: 36px;
+    color: $headersTextColor;
   }
 
   &__about-text {
@@ -33,16 +35,33 @@
   }
 
   &__icons {
-    margin-bottom: 40px;
+    margin-bottom: 22px;
   }
 
   &__icon-link:not(:last-child) {
     margin-right: 25px;
   }
 
-  &__resources p {
-    @include text(18px, 18px);
+  &__resources {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 25px;
+  }
+
+  &__bottom {
+    padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyright {
+    @include text(14px, 27px);
+    opacity: 50%;
+  }
+
+  &__bottom-link {
+    margin-left: 25px;
+    @include text(14px, 27px);
   }
 
 }

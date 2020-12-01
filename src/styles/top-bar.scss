@@ -1,27 +1,66 @@
+@import "utils";
+
 .top-bar {
   display: flex;
-  width: 100%;
   justify-content: space-between;
   align-items: center;
+
+  &__logo {
+    margin-right: 24px;
+  }
 
   &__link {
     display: inline-block;
     height: 28px;
   }
 
-  &__phone {
-    margin-right: 35px;
+  &__contacts {
+    display: flex;
+    align-items: center;
+    padding-left: 25px;
+  }
+
+  &__phone-icon {
+    visibility: hidden;
+    transition: color 0.5s;
+  }
+
+  &__phone-icon:hover {
+    color: #f47b9e;
+  }
+
+  @media (max-width: 890px) {
+    &__phone {
+      display: none;
+    }
+
+    &__phone-icon {
+      visibility: visible;
+      font-size: 24px;
+      color: $mainColor;
+      opacity: 80%;
+    }
   }
 
   &__button {
-    display: inline-block;
-    text-align: center;
-    line-height: 40px;
-    color: #fff;
-    background-color: #3751ff;
-    border: 1px solid #3751ff;
-    border-radius: 100px;
+    @include btnStyle($colorWhite, $mainColor, 40px);
+    min-width: 113px;
     padding: 0 16px;
+    margin-left: 35px;
+    transition: all 500ms ease;
   }
 
+  &__button:before {
+    @include btnBefore($colorWhite);
+  }
+
+  @media (max-width: 970px) {
+    &__button {
+      margin-left: 20px;
+    }
+  }
+
+  &__button:hover:before {
+    height: 40px;
+  }
 }

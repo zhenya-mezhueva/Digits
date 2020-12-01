@@ -35,3 +35,16 @@
   line-height: 22px;
   font-weight: 500;
 }
+
+.link {
+  font-family: $textFont;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  border-radius: 100px;
+  font-family: $textFont;
+  font-size: 16px;
+  min-width: 120px;
+}

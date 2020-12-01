@@ -7,11 +7,11 @@
   padding: 65px 50px;
 
   &__description {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     font-family: $textFont;
-    font-size: 16px;
+    //font-size: 16px;
     line-height: 27px;
-    color: rgb(69, 88, 128);
+    color: $textColor;
     opacity: 50%;
   }
 
@@ -23,14 +23,13 @@
 
   &__link {
     display: inline-block;
-    text-align: center;
-    padding: 5px 0;
-    height: 44px;
+    padding: 15px 0;
     border-radius: 10px;
+    transition: transform 0.5s ease;
   }
 
   &__link:hover {
-    box-shadow: 5px 5px 5px black;
+    transform: translateY(-20px);
   }
 
 }
