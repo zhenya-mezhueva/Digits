@@ -1,22 +1,28 @@
 @import "utils";
 
 .simplicity {
-  height: 1000px;
-  background-image: url("../images/simplicity-bg.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding-top: 10%;
+  background-color: $simplicityColor;
 
   &__content {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 150px;
+
+    @media (max-width: 768px) {
+      padding-top: 100px;
+    }
+    @media (max-width: 415px) {
+      padding-top: 40px;
+    }
+
   }
 
   &__title {
     margin-bottom: 40px;
     color: $headersTextColor;
+    text-align: center;
   }
 
   &__text {
@@ -27,6 +33,10 @@
     font-family: $textFont;
     color: $textColor;
     margin-bottom: 40px;
+
+    @media (max-width: 415px) {
+      font-size: 18px;
+    }
   }
 
   &__btn {
@@ -37,5 +47,12 @@
     color: white;
     border-radius: 100px;
     padding: 0 35px;
+    margin-bottom: 16px;
+  }
+
+  &__bottom-pic {
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
   }
 }

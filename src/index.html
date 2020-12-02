@@ -37,13 +37,6 @@
               </ul>
             </nav>
             <div class="top-bar__contacts">
-              <a href="#"  class="top-bar__phone-icon-link">
-                <img
-                  class="top-bar__phone-icon"
-                  src="images/phone-icon.png"
-                  alt="phone"
-                >
-              </a>
               <a href="tel:+12 123 456 789" class="nav__link top-bar__phone">+12 123 456 789</a>
               <a href="#" class="top-bar__button btn">Contact Us</a>
             </div>
@@ -53,12 +46,17 @@
               <h1 class="header__title">Good design meets<br>great user experience</h1>
               <p class="header__subtitle">For everyone, from beginners to experts</p>
               <div class="header__buttons">
-                <a href="" class="header__button btn">Buy Digits</a>
-                <a href="" class="header__button btn header__button--not-active">See the Features</a>
+                <a href="#launch" class="header__button btn">Buy Digits</a>
+                <a href="#simplicity" class="header__button btn header__button--not-active">See the Features</a>
               </div>
             </div>
-            <div class="header__picture">
-              <img src="images/header-graphic.svg" alt="header picture">
+
+            <div class="header__picture-wrap">
+              <img
+                class="header__picture"
+                src="images/header-graphic.svg"
+                alt="header picture"
+              >
             </div>
 
           </div>
@@ -70,42 +68,75 @@
       <section class="top-clients page__top-clients">
         <p class="top-clients__description">Trusted by forward-thinking software teams around the world</p>
         <div class="top-clients__logos">
-          <a href="https://www.netflix.com/ua/" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://www.netflix.com/ua/"
+            target="_blank"
+            rel="noopener"
+            >
             <img
               src="images/netflix__logo.png"
               alt="netflix logo"
               class="top-client__logo">
           </a>
-          <a href="https://www.drawkit.io" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://www.drawkit.io"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               src="images/drawkit__logo.png"
               alt="drawKit logo" class="top-client__logo">
           </a>
-          <a href="https://www.figma.com" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://www.figma.com"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               src="images/figma__logo.png"
               alt="figma logo"
               class="top-client__logo">
           </a>
-          <a href="https://www.cinemax.com" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://www.cinemax.com"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               src="images/cinemax__logo.png"
               alt="cinemax logo"
               class="top-client__logo">
           </a>
-          <a href="https://stripe.com" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://stripe.com"
+            target="_blank"
+            rel="noopener"
+          >
             <img
               src="images/stripe__logo.png"
               alt="stripe logo"
               class="top-client__logo">
           </a>
-          <a href="https://www.google.com" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://www.google.com"
+            target="_blank"
+            rel="noopener">
             <img
               src="images/google__logo.png"
               alt="google logo"
               class="top-client__logo">
           </a>
-          <a href="https://disney.co.uk" class="top-clients__link">
+          <a
+            class="top-clients__link"
+            href="https://disney.co.uk"
+            target="_blank"
+            rel="noopener">
             <img
               src="images/disney_logo.png"
               alt="disney logo"
@@ -118,8 +149,11 @@
         <div class="container">
           <h2 class="help__title section-title">Whatever work you do, <br>we're able to help</h2>
           <div class="help__content">
-            <div class="help_img">
-              <img src="images/help-bg.jpg" alt="people">
+            <div class="help__img-wrap">
+              <img
+                class="help__img"
+                src="images/help-bg.jpg"
+                alt="people">
             </div>
             <div class="help__cards">
               <div class="help__card card">
@@ -153,10 +187,11 @@
 
       <section class="simplicity">
         <div class="container">
-          <div class="simplicity__content">
+          <div class="simplicity__content" id="simplicity">
             <h2 class="simplicity__title section-title">Simplicity meets innovative design</h2>
             <p class="simplicity__text">It's really easy to start using Digits. <br>Install the theme, choose a demo and start designing the future of your business!</p>
             <a href="#" class="simplicity__btn">Buy Digits</a>
+            <img src="images/simplicity-pic.png" alt="" class="simplicity__bottom-pic">
           </div>
 
         </div>
@@ -199,7 +234,7 @@
         </div>
       </section>
 
-      <section class="launch">
+      <section class="launch" id="launch">
         <div class="container">
           <div class="launch__content">
             <h2 class="launch__title section-title">Ready to launch <br>your next website?</h2>
