@@ -25,7 +25,7 @@
   }
 
   &__link:hover {
-    color: #f47b9e;
+    color: $pinkColor;
   }
 
   &__toggle {
@@ -102,7 +102,7 @@
 
     &__link:hover {
       background-color: $headersTextColor;
-      color: #fff;
+      color: $colorWhite;
     }
 
     &__span,
